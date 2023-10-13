@@ -20,8 +20,8 @@ p, h1,h2,h3,h4 {
     margin: 0 auto; 
 }
 section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 .visually-hidden {
     position: absolute;
@@ -192,7 +192,6 @@ background-color: #404BBF;
 display: flex;
 flex-wrap: wrap;
 gap: 72px;
-padding-top: 96px;
 }
 .features-wrap {
     display: none;
@@ -241,12 +240,16 @@ margin-bottom: 72px;
 }
 .team-list {
     display: flex;
-    gap: 24px;
+    gap: 72px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 .team-list-item {
 border-radius: 0px 0px 4px 4px;
 background-color: #FFF;
 box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+/* margin: 0 auto; */
 }
 .card-content {
 padding: 32px 0;
@@ -724,6 +727,13 @@ background-color: #404BBF;
     .features-items {
         max-width: calc((100% - 24px) / 2 );
     }
+    .team-list {
+        gap: 64px 24px;
+    }
+    .team-list-item {
+        max-width: calc((100% - 24px) / 2);
+        /* margin: 0 auto; */
+    }
 }
 
 /* -------------------DESKTOP------------- */
@@ -732,6 +742,10 @@ background-color: #404BBF;
     .container {
         max-width: 1158px;
         padding: 0 15px 0 15px;
+    }
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
     .features-wrap {
         display: flex;
@@ -745,7 +759,6 @@ background-color: #404BBF;
     .features-list {
         gap: 72px;
         flex-wrap: nowrap;
-        padding-top: 120px;
     }
     .features-items {
         width: 100%;
@@ -753,4 +766,5 @@ background-color: #404BBF;
     .features-text {
         font-weight: 400;
     }
+    .
 }
