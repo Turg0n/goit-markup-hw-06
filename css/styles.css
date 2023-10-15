@@ -366,8 +366,10 @@ letter-spacing: 0.02em;
 background-color: #2E2F42;
 }
 .logo-foot {
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
     margin-bottom: 16px;
+    text-align: center;
 }
 .logo-fstud {
     color: #f4f4fd;
@@ -377,16 +379,19 @@ background-color: #2E2F42;
     color: #F4F4FD;
     line-height: 1.5; 
     letter-spacing: 0.02em;
+;
+
 }
 .footer-container {
-    max-width: 1158px;   
-    padding: 0 15px 0 15px;  
-    display: flex;
+    display: block;
 align-items: baseline;
 position: relative;
 }
 .footer-container-left {
-    margin-right: 120px;
+    margin-bottom: 72px;
+}
+.footer-social {
+    margin-bottom: 72px;
 }
 .footer-social-text {
     color:#FFF;
@@ -394,10 +399,13 @@ font-weight: 500;
 line-height: 1.5; 
 letter-spacing: 0.02em;
     margin-bottom: 16px;
+    text-align: center;
 }
 .footer-social-link {
     display: flex;
     gap: 16px;
+    justify-content: center;
+    align-items: center;
 }
 .footer-wrap {
     display: flex;
@@ -423,13 +431,13 @@ background-color: #31D0AA;
 
 
 .footer-modal-wrap {
-    position: absolute;
-    right: 0;
+    /* position: absolute;
+    right: 0; */
 }
 .footer-modal {
-    display: flex;
+    display: block;
     align-items: end;
-    gap: 24px;
+    /* gap: 24px; */
 }
 .footer-modal-text {
     color :#FFF;
@@ -437,11 +445,12 @@ background-color: #31D0AA;
     line-height: 1.5; /* 150% */
     letter-spacing: 0.02em;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .footer-input {
     background-color: transparent;
-    width: 264px;
+    width: 100%; 
 height: 40px;
 flex-shrink: 0;
 border-radius: 4px;
@@ -453,6 +462,7 @@ font-size: 12px;
 line-height: 1.5;
 letter-spacing: 0.04em;
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+margin-bottom: 16px;
 }
 .footer-input::placeholder {
     
@@ -477,6 +487,7 @@ height: 40px;
 border: none;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 cursor: pointer;
+margin: 0 auto;
 }
 .footer-button-icon {
     fill: #FFF;
@@ -730,7 +741,6 @@ background-color: #404BBF;
     }
     .team-list-item {
         max-width: calc((100% - 24px) / 2);
-        /* margin: 0 auto; */
     }
     .portfolio-list {
         gap: 72px 24px;
@@ -738,6 +748,38 @@ background-color: #404BBF;
     .portfolio-list-item {
         max-width: calc((100% - 24px) / 2);
     }
+    .footer {
+        padding: 0;
+    }
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px 72px;
+        justify-content:baseline;
+        padding: 96px;
+    }
+    .logo-foot {
+        text-align: start;
+    }
+    .footer-social-text {
+        text-align: start;
+    }
+    .footer-modal-wrap {
+        max-width: 100%;
+    }
+    .footer-modal {
+        display: flex;
+        gap: 24px;
+        align-items:baseline;
+    }
+    .footer-modal-text {
+        text-align: start;
+    }
+    .footer-input {
+        width: 264px;
+        height: 40px;
+    }
+    
 }
 
 /* -------------------DESKTOP------------- */
@@ -775,6 +817,17 @@ background-color: #404BBF;
     }
     .portfolio-list-item {
         max-width: calc((100% - 48px) / 3);
+    }
+    .footer {
+        padding-top: 100px;
+    }
+    .footer-container {
+        gap: 0;
+        flex-wrap: nowrap;
+    }
+    .footer-social {
+        margin-left: 120px;
+        margin-right: 90px;
     }
     
 }
