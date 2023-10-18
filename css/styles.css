@@ -46,7 +46,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 .header-container {
     display: flex;
     padding: 0 15px 0 15px;
-    gap: 332px;
+    /* gap: 332px; */
     align-items: center;
     justify-content: space-between;
 }
@@ -63,7 +63,7 @@ align-items: center;
 
 }
 .header-nav-list {
-    display: flex;
+    display: none; 
     gap: 40px;
     }
 
