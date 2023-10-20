@@ -1065,8 +1065,7 @@ background-color: #404BBF;
         max-width: calc((100% - 48px) / 3);
     }
     .footer {
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding: 100px 0;
     }
     .footer-container {
         gap: 0;
