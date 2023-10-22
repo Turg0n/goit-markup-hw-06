@@ -876,7 +876,6 @@ background-color: #404BBF;
         max-width: 768px;
     }
     .header {
-        width: 768px;
         margin: 0 auto;
     }
     .header-container {
@@ -1007,9 +1006,6 @@ background-color: #404BBF;
     .container {
         max-width: 1158px;
         padding: 0 15px 0 15px;
-    }
-    .header {
-        width: 1440px;
     }
     .header-container {
         gap: 332px;
